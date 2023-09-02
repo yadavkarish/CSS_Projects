@@ -231,7 +231,7 @@ color: #dddddd;
     align-items: center;
 }
 
-.img-logo{
+.logo{
     background-image: url("/amazonclone/images/amazon_logo.png");
     background-size: cover;
     height: 50px;
