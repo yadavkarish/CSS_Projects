@@ -227,7 +227,7 @@ body {
   line-height: 1.4;
   margin-bottom: 4rem;
 }
-#service {
+#service,#project {
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
@@ -252,13 +252,39 @@ body {
   padding: 90px;
 }
 
-.service-list {
+.services .service-list h5{
+  padding-top: 5px;
+  display: inline;
+  font-size: 18px;
+}
+
+.experience-details {
+  background-color: transparent;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 13px;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: inset 1px 1px 20px #03141a, inset 1px 1px 40px#051d24;
+}
+
+.services .service-list p{
+  /* padding-top: 5px; */
+  display: flex;
+  /* font-size: 18px; */
+}
+
+.project-list p span{
+  display: flex;
+}
+
+.service-list,.project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
-.service-list div {
+.service-list .outer,.project-list div {
   background-color: transparent;
   padding: 40px;
   font-size: 13px;
@@ -269,18 +295,18 @@ body {
   box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
 }
 
-.service-list div i {
+.service-list .outer i,.project-list div i  {
   font-size: 50px;
   margin-bottom: 30px;
 }
 
-.service-list div h2 {
+.service-list .outer h2,.project-list div h2 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
 }
 
-.service-list div a {
+.service-list .outer a,.project-list div a {
   text-decoration: none;
   color: #000000;
   font-size: 12px;
@@ -288,6 +314,17 @@ body {
   margin-bottom: 10px;
   display: inline-block;
 }
+
+.duration {
+  color: #0ef; /* Customize the color */
+  font-weight: bold; /* Add any desired styling */
+}
+
+.location {
+  color: #0ef; /* Customize the color */
+  font-weight: bold; /* Add any desired styling */
+}
+
 
 .read {
   display: inline-block;
@@ -310,7 +347,7 @@ body {
     0 0 200px cyan;
 }
 
-.service-list div:hover {
+.service-list .outer:hover,.project-list div:hover  {
   transform: translateY(-100px);
 }
 
@@ -574,6 +611,7 @@ section{
 }
 
 
+/* contact */
 .contact{
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -584,9 +622,9 @@ section{
 }
 
 .contact-text h2{
-  font-size: 90px;
+  font-size: 70px;
   line-height: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-text h2 span{
@@ -763,3 +801,7 @@ section{
     opacity: 1;
   }
 }
+
+
+
+
